@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="71" id="8TS-7L-leT" customClass="MenuTableViewCell" customModule="MantraLabs" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8TS-7L-leT" id="xCY-md-Q8p">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd0-T4-t7F">
+                        <rect key="frame" x="16" y="8" width="390" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLb-kk-wKG">
+                        <rect key="frame" x="20" y="37" width="386" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fd0-T4-t7F" firstAttribute="leading" secondItem="xCY-md-Q8p" secondAttribute="leading" constant="16" id="G8r-HA-soD"/>
+                    <constraint firstItem="DLb-kk-wKG" firstAttribute="leading" secondItem="xCY-md-Q8p" secondAttribute="leading" constant="20" id="Sae-lH-CSb"/>
+                    <constraint firstAttribute="bottom" secondItem="DLb-kk-wKG" secondAttribute="bottom" constant="8" id="cgI-oi-HgR"/>
+                    <constraint firstItem="DLb-kk-wKG" firstAttribute="top" secondItem="fd0-T4-t7F" secondAttribute="bottom" constant="5" id="fov-ms-uqH"/>
+                    <constraint firstAttribute="trailing" secondItem="fd0-T4-t7F" secondAttribute="trailing" constant="8" id="hnm-AT-osq"/>
+                    <constraint firstItem="fd0-T4-t7F" firstAttribute="top" secondItem="xCY-md-Q8p" secondAttribute="top" constant="8" id="kze-oi-QRh"/>
+                    <constraint firstAttribute="trailing" secondItem="DLb-kk-wKG" secondAttribute="trailing" constant="8" id="z1E-mP-EU7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="DLb-kk-wKG" id="GGK-pn-gwa"/>
+                <outlet property="subCategoryLabel" destination="fd0-T4-t7F" id="1gL-dX-b9e"/>
+            </connections>
+            <point key="canvasLocation" x="-97.101449275362327" y="67.96875"/>
+        </tableViewCell>
+    </objects>
+</document>
